@@ -1,0 +1,13 @@
+{
+  "name": "aura-weather",
+  "version": "1.0.0",
+  "description": "Real-time atmospheric intelligence weather application",
+  "private": true,
+  "scripts": {
+    "dev": "python -m http.server 8080",
+    "start": "python -m http.server 8080"
+  },
+  "keywords": ["weather", "forecast", "open-meteo", "pwa", "glassmorphism"],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "AuraWeather — Real-Time Atmospheric Intelligence",
+  "short_name": "AuraWeather",
+  "description": "Premium cross-platform real-time weather forecasts, dynamic atmospheric animations, 24-hour trends, and air quality index.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#070b14",
+  "theme_color": "#0d1424",
+  "categories": ["weather", "utilities", "lifestyle"],
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Current Location",
+      "url": "./index.html?locate=true",
+      "description": "Quickly inspect weather for your current GPS coordinates"
+    }
+  ]
+}
