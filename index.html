@@ -7,8 +7,8 @@
   <meta name="keywords" content="weather, forecast, live weather, meteorology, air quality index, hourly forecast, pwa weather">
   
   <!-- Mobile & PWA Platform Meta Tags -->
-  <meta name="theme-color" content="#0d1424" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#1a4279" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0f1e" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#0e2154" media="(prefers-color-scheme: light)">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -22,10 +22,10 @@
 
   <title>AuraWeather — Real-Time Atmospheric Intelligence</title>
 
-  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -216,7 +216,17 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                 <h3 id="hourly-heading" class="section-title">Hourly Forecast</h3>
               </div>
-              <span class="section-subtitle">Next 24 Hours</span>
+              <div class="carousel-nav-group">
+                <span class="section-subtitle">Next 24 Hours</span>
+                <div class="hourly-nav-btns" role="group" aria-label="Hourly timeline navigation">
+                  <button id="hourly-scroll-prev" class="carousel-nav-btn" aria-label="Scroll hourly forecast backward" title="Scroll earlier">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                  </button>
+                  <button id="hourly-scroll-next" class="carousel-nav-btn" aria-label="Scroll hourly forecast forward" title="Scroll later">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                  </button>
+                </div>
+              </div>
             </div>
             
             <div class="hourly-timeline-container" id="hourly-timeline" tabindex="0" role="region" aria-label="Hourly timeline">
